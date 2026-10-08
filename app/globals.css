@@ -55,8 +55,16 @@ h1 { font-size: 27px; letter-spacing: -.8px; margin: 0; font-weight: 750; color:
 .secondary-button svg, .primary-button svg, .filter-button svg, .view-all svg { width: 14px; height: 14px; }.secondary-button svg:last-child { width: 12px; }
 .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 17px; }
 .metric-card, .panel { background: #fff; border: 1px solid #e7ebf2; border-radius: 11px; box-shadow: 0 2px 4px #22325004; }
-.metric-card { padding: 19px 19px 15px; min-height: 151px; position: relative; overflow: hidden; }
-.metric-top { display: flex; justify-content: space-between; align-items: center; color: #7a879b; font-size: 11px; font-weight: 600; }
+  .metric-card { padding: 19px 19px 15px; min-height: 151px; position: relative; overflow: hidden; }
+  .reference-metric { min-height: 116px; padding: 15px 17px 13px; border-radius: 15px; box-shadow: 0 7px 18px #22325008; }
+  .reference-metric .metric-top { color: #293241; font-size: 11px; font-weight: 700; }
+  .reference-metric .metric-icon { width: 25px; height: 25px; border-radius: 7px; color: #3c66d7; background: transparent; }
+  .reference-metric .metric-value { margin: 10px 0 8px; font-size: 22px; color: #202735; }
+  .reference-metric .metric-footer { justify-content: space-between; font-size: 9px; color: #9aa3b0; }
+  .reference-metric .metric-change { margin-left: auto; border-radius: 5px; padding: 3px 6px; font-size: 9px; font-weight: 700; }
+  .reference-metric .metric-change.positive { color: #48ad7f; background: #e9f8ef; }
+  .reference-metric .metric-change.negative { color: #dc6b83; background: #fceaf0; }
+  .metric-top { display: flex; justify-content: space-between; align-items: center; color: #7a879b; font-size: 11px; font-weight: 600; }
 .metric-icon { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; } .metric-icon svg { width: 15px; height: 15px; }
 .metric-icon.green { color: #27977a; background: #e1f5ee; }.metric-icon.blue { color: #6489cc; background: #e9effb; }.metric-icon.orange { color: #d18a46; background: #fff0df; }.metric-icon.purple { color: #8b77bf; background: #f0ebfb; }
 .metric-value { font-size: 22px; letter-spacing: -.7px; font-weight: 750; margin: 14px 0 11px; color: #1a2436; }.metric-unit { font-size: 14px; font-weight: 600; color: #7e899c; margin-left: 2px; }
